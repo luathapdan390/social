@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Người Khác Nghĩ Gì Về Mình? - Phong Cách La Mã</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chariot-container">
+        <img src="chariot.png" alt="Chiến mã La Mã" class="chariot-img">
+    </div>
+
+    <header class="roman-header">
+        <h1>SPQR - QUÆ ALII DE ME COGITANT?</h1>
+        <h2>(2. Người Khác Nghĩ Gì Về Mình?)</h2>
+    </header>
+
+    <main class="roman-container">
+        <div class="sword-decoration left-sword">
+            <img src="sword.png" alt="Gươm La Mã" class="sword-img">
+        </div>
+
+        <section class="attributes-section">
+            <p class="section-title">PHẨM CHẤT ĐƯỢC CA TỤNG (VIRTUTES CELEBRATÆ)</p>
+            <div class="attributes-list">
+                <ul>
+                    <li><span class="attribute-name">Chuyên Nghiệp</span></li>
+                    <li><span class="attribute-name">Đẳng Cấp</span></li>
+                    <li><span class="attribute-name">Cao Cấp</span></li>
+                    <li><span class="attribute-name">Gần Gũi</span></li>
+                    <li><span class="attribute-name">Thực tế / Thực Chiến</span></li>
+                    <li><span class="attribute-name">Lòng trắc ẩn</span></li>
+                    <li><span class="attribute-name">Tiêu Chuẩn Vàng</span></li>
+                </ul>
+                <ul>
+                    <li><span class="attribute-name">Sâu sắc</span></li>
+                    <li><span class="attribute-name">Có Giá Trị</span></li>
+                    <li><span class="attribute-name">Xu thế</span></li>
+                    <li><span class="attribute-name">Dễ hiểu, dễ ứng dụng</span></li>
+                    <li><span class="attribute-name">Hóm hỉnh, hài hước</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="formula-section">
+            <p class="section-title">CÔNG THỨC MỞ RỘNG ĐẾ CHẾ (FOLLOWERS)</p>
+            <div class="formula-container">
+                <p>Số lượng Followers = Thời Gian (T) $\times$ Số Videos (V) $\times$ Nội Dung Tập Trung (N) $\times$ Trending (R) $\times$ Chất Lượng (C)</p>
+                <div class="variables-input">
+                    <label for="time">Thời Gian (T - giờ/tuần):</label>
+                    <input type="number" id="time" value="10" min="0" step="1">
+                    
+                    <label for="videos">Số Videos (V - video/tháng):</label>
+                    <input type="number" id="videos" value="4" min="0" step="1">
+                    
+                    <label for="focus">Nội Dung Tập Trung (N - Thang 1-10):</label>
+                    <input type="number" id="focus" value="8" min="1" max="10" step="0.1">
+                    
+                    <label for="trending">Trending (R - Thang 1-10):</label>
+                    <input type="number" id="trending" value="6" min="1" max="10" step="0.1">
+                    
+                    <label for="quality">Chất Lượng (C - Thang 1-10):</label>
+                    <input type="number" id="quality" value="9" min="1" max="10" step="0.1">
+
+                    <button id="calculate-btn">Tính Toán</button>
+                </div>
+                <h3 class="result-title">TỔNG QUÂN SỐ CỦA ĐẾ CHẾ:</h3>
+                <p id="result" class="roman-result">0</p>
+            </div>
+        </section>
+
+        <div class="sword-decoration right-sword">
+            <img src="sword.png" alt="Gươm La Mã" class="sword-img">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
